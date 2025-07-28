@@ -28,7 +28,7 @@ export class Logger {
     private static formatContext(context: any): string {
         try {
             return JSON.stringify(context, this.getCircularReplacer(), 2);
-        } catch (error) {
+        } catch (_error) {
             return String(context);
         }
     }

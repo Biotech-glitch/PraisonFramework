@@ -14,7 +14,7 @@ export class BaseTool implements Tool {
     this.description = description;
   }
 
-  async execute(...args: any[]): Promise<any> {
+  async execute(..._args: any[]): Promise<any> {
     throw new Error('Method not implemented.');
   }
 }

@@ -5,6 +5,10 @@ export function setTaskMode(enabled: boolean) {
   useTaskMode = enabled;
 }
 
+export function getTaskMode(): boolean {
+  return useTaskMode;
+}
+
 export { Agent, PraisonAIAgents, Task } from './proxy';
 export type { ProxyAgentConfig } from './proxy';
 export type { AgentConfig } from './types';

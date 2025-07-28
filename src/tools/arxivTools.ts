@@ -1,5 +1,5 @@
 import axios from 'axios';
-import { Tool, BaseTool } from './index';
+import { BaseTool } from './index';
 import { XMLParser } from 'fast-xml-parser';
 
 export interface ArxivPaper {

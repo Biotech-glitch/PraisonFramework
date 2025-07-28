@@ -23,7 +23,7 @@ async function loadDependencies() {
         
         [chalk, boxen, ora, Table, figlet] = imports.map(imp => imp.default);
         return true;
-    } catch (error) {
+    } catch (_error) {
         console.warn('Pretty logging dependencies not available, falling back to basic logging');
         return false;
     }
