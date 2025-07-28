@@ -29,11 +29,13 @@ export class BaseLLM implements LLM {
     this.config = config;
   }
 
-  async generate(prompt: string): Promise<LLMResponse> {
+  async generate(_prompt: string): Promise<LLMResponse> {
     throw new Error('Method not implemented.');
   }
 
-  async *generateStream(prompt: string): AsyncGenerator<string, void, unknown> {
+  async *generateStream(_prompt: string): AsyncGenerator<string, void, unknown> {
     throw new Error('Method not implemented.');
+    // This yield is unreachable but needed to satisfy the generator function requirement
+    yield '';
   }
 }

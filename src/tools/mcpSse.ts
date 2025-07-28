@@ -1,5 +1,6 @@
 import { Client } from '@modelcontextprotocol/sdk/client/index.js';
 import { SSEClientTransport } from '@modelcontextprotocol/sdk/client/sse.js';
+import { URL } from 'url';
 import { BaseTool } from './index';
 
 export interface MCPToolInfo {
