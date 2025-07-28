@@ -1,7 +1,7 @@
 import { Agent as SimpleAgent, PraisonAIAgents as SimplePraisonAIAgents, SimpleAgentConfig } from './simple';
 import { Agent as TaskAgent, PraisonAIAgents as TaskPraisonAIAgents, TaskAgentConfig } from './types';
 import { Task } from './types';
-import type { ChatCompletionTool } from 'openai/resources/chat/completions';
+// Removed unused import: ChatCompletionTool
 
 export interface ProxyAgentConfig extends Partial<SimpleAgentConfig>, Partial<TaskAgentConfig> {
   task?: Task;

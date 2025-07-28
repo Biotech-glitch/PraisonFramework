@@ -1,6 +1,6 @@
 import { OpenAIService } from '../llm/openai';
 import { Logger } from '../utils/logger';
-import type { ChatCompletionTool } from 'openai/resources/chat/completions';
+// Removed unused import: ChatCompletionTool
 
 export interface SimpleAgentConfig {
   instructions: string;

@@ -34,8 +34,8 @@ export class BaseLLM implements LLM {
   }
 
   async *generateStream(_prompt: string): AsyncGenerator<string, void, unknown> {
-    throw new Error('Method not implemented.');
-    // This yield is unreachable but needed to satisfy the generator function requirement
+    // This yield is needed to satisfy the generator function requirement
     yield '';
+    throw new Error('Method not implemented.');
   }
 }
